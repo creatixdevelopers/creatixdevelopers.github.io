@@ -16,42 +16,49 @@
 		<img id="logo" class="interactive" src="creatix-logo.png" data-tilt>
 		<p id="tagline" class="magnet interactive" style="">We build cool <br> sh*t</p>
 	</div>
-	<div id="portfolio">
-		<h1 class="section-header">We like to show-off</h1>
-		<div class="row" style="margin: 0 15%">
-			<div class="col-xs-4 col-lg-6 col-md-6 col-sm-6 portfolio-card">
-				<div class="portfolio-item" data-tilt data-tilt-max="5">
-					<img class="portfolio-image interactive" src="1.jpg">
-					<div class="portfolio-item-description">
-						<h1 class="portfolio-tite interactive">Project 1</h1>
-						<p class="portfolio-subtitle interactive">Tech stack used</p>
+	<div id="about" style="background-color: white; background-image: radial-gradient(grey 1px, transparent 0); background-size: 40px 40px; font-family: 'Montserrat', sans-serif;">
+		<h1 style="font-size: 15vh; margin-left: 5vh">About Us</h1>
+		<p style="font-size: 4vh; margin: 5vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis vel eros donec ac odio tempor orci. Lectus urna duis convallis convallis tellus id. Auctor urna nunc id cursus metus aliquam eleifend. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Risus ultricies tristique nulla aliquet. Cras sed felis eget velit aliquet sagittis id consectetur purus. Odio ut enim blandit volutpat maecenas volutpat. Enim ut tellus elementum sagittis vitae. In fermentum et sollicitudin ac orci phasellus.</p>
+		<h1 style="font-size: 8vh; margin-left: 5vh; padding-bottom: 5vh;text-align: center;">(つ▀¯▀)つ</h1>
+	</div>
+	<div id="portfolio_background">
+		<div id="portfolio">
+			<h1 class="section-header">We like to show-off</h1>
+			<div class="row" style="margin: 0 15%">
+				<div class="col-xs-4 col-lg-6 col-md-6 col-sm-6 portfolio-card">
+					<div class="portfolio-item" data-tilt data-tilt-max="5">
+						<img class="portfolio-image interactive" src="1.jpg">
+						<div class="portfolio-item-description">
+							<h1 class="portfolio-tite interactive">Project 1</h1>
+							<p class="portfolio-subtitle interactive">Tech stack used</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-xs-4 col-lg-6 col-md-6 col-sm-6 portfolio-card offset">
-				<div class="portfolio-item" data-tilt data-tilt-max="5">
-					<img class="portfolio-image interactive" src="1.jpg">
-					<div class="portfolio-item-description">
-						<h1 class="portfolio-tite interactive">Project 2</h1>
-						<p class="portfolio-subtitle interactive">Tech stack used</p>
+				<div class="col-xs-4 col-lg-6 col-md-6 col-sm-6 portfolio-card offset">
+					<div class="portfolio-item" data-tilt data-tilt-max="5">
+						<img class="portfolio-image interactive" src="1.jpg">
+						<div class="portfolio-item-description">
+							<h1 class="portfolio-tite interactive">Project 2</h1>
+							<p class="portfolio-subtitle interactive">Tech stack used</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-xs-4 col-lg-6 col-md-6 col-sm-6 portfolio-card">
-				<div class="portfolio-item" data-tilt data-tilt-max="5">
-					<img class="portfolio-image interactive" src="1.jpg">
-					<div class="portfolio-item-description">
-						<h1 class="portfolio-tite interactive">Project 3</h1>
-						<p class="portfolio-subtitle interactive">Tech stack used</p>
+				<div class="col-xs-4 col-lg-6 col-md-6 col-sm-6 portfolio-card">
+					<div class="portfolio-item" data-tilt data-tilt-max="5">
+						<img class="portfolio-image interactive" src="1.jpg">
+						<div class="portfolio-item-description">
+							<h1 class="portfolio-tite interactive">Project 3</h1>
+							<p class="portfolio-subtitle interactive">Tech stack used</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-xs-4 col-lg-6 col-md-6 col-sm-6 portfolio-card offset">
-				<div class="portfolio-item" data-tilt data-tilt-max="5">
-					<img class="portfolio-image interactive" src="1.jpg">
-					<div class="portfolio-item-description">
-						<h1 class="portfolio-tite interactive">Project 4</h1>
-						<p class="portfolio-subtitle interactive">Tech stack used</p>
+				<div class="col-xs-4 col-lg-6 col-md-6 col-sm-6 portfolio-card offset">
+					<div class="portfolio-item" data-tilt data-tilt-max="5">
+						<img class="portfolio-image interactive" src="1.jpg">
+						<div class="portfolio-item-description">
+							<h1 class="portfolio-tite interactive">Project 4</h1>
+							<p class="portfolio-subtitle interactive">Tech stack used</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -81,7 +88,17 @@
 					speed: 2
 				}
 			},
-			retina_detect: true
+			retina_detect: true,
+		});
+	</script>
+	<script src="sparticles.js"></script>
+	<script>
+		let $el = $("#portfolio_background");
+		let mySparticles = new Sparticles($el[0], { count:500, shape:"triangle", style:"both", minSize:1, maxSize:10, direction:120, speed:0, parallax:20, drift:4, color:"white" });
+		$(document).ready(function() {
+		  setTimeout(function() {
+		    	$("#portfolio").css("position", "absolute");
+		  }, 1000);
 		});
 	</script>
 	<script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
