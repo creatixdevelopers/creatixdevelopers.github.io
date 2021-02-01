@@ -97,3 +97,23 @@
 		margin-top: 0;
 	}
 }
+
+#btn-close-modal {
+    width:100%;
+    text-align: center;
+    cursor:pointer;
+    color:#fff;
+    margin-top: 40px !important;
+}
+.closebt {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor:pointer;
+}
+.closebt:hover {
+    transform: rotate(90deg);
+    transform: all 0.2s;
+}
