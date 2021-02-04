@@ -1,0 +1,349 @@
+* {
+	cursor: url('../assets/cursor.png'), pointer;
+}
+.interactive {
+	cursor: url('../assets/cursor-2.png'), pointer;
+}
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background: #fed136; 
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #fed136; 
+}
+.categoryModalButton {
+	outline: none !important;
+}
+#particles-js {
+	background-color: black;
+	 margin: 0px;
+	 height: 100vh;
+	 width: 100%;
+}
+#logo {
+	position: absolute;
+	width: 50%;
+	top: 15%;
+}
+#tagline {
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	margin: 0px;
+	color: white;
+	text-align: right;  
+	font-size: 6vw;
+	font-family: 'VT323', monospace;
+	line-height: 0.8
+}
+.magnet {
+	display: inline-block;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transition: all .5s ease;
+}
+.section_title {
+	font-size: 15vh;
+	margin-left: 5vh;
+}
+.section_text {
+	font-size: 4vh; 
+	margin: 5vh;
+}
+.kaomoji {
+	font-size: 8vh; 
+	margin-left: 5vh; 
+	padding-bottom: 5vh;
+	text-align: center;
+}
+.white_background {
+	background-color: white;
+	background-image: radial-gradient(grey 1px, transparent 0);
+	background-size: 40px 40px; 
+	font-family: 'Montserrat', sans-serif;
+}
+.black_background {
+	background-color: black; 
+	background-image: radial-gradient(grey 1px, transparent 0); 
+	background-size: 40px 40px; 
+	font-family: 'Montserrat', sans-serif; 
+	color: white
+}
+.card-container {
+	margin: 0 10%;
+}
+.glass_card {
+	border-radius: 15px;
+	background: rgba(255,255,255,0.1); 
+	border-top: 1px solid rgba(255,255,255,0.5); 
+	border-left: 1px solid rgba(255,255,255,0.5); 
+	backdrop-filter: blur(3px); 
+	padding:2rem;  
+	text-align: center; 
+	transform-style: preserve-3d; 
+	transform: perspective(1000px); 
+	margin-top:50px;
+	color: white;
+}
+.card_title {
+	font-size: 10vh;
+	word-break: break-word;
+	font-family: 'VT323', monospace;
+}
+.card_btn {
+	border-radius: 20px;
+	transform: translateZ(30px);
+}
+.card_btn:hover {
+	cursor: url('../assets/cursor-2.png'), pointer !important;
+}
+.owl-carousel .owl-stage {
+  	display: flex;
+  	align-items: center;
+}
+.owl-item {
+	display: flex !important;
+	align-items: center !important;
+	flex-direction: column !important;
+}
+.owl-prev, .owl-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block !important;
+	border:0px solid white !important;
+	border-radius: 50% !important;
+	outline: none !important;
+}
+.owl-prev:hover, .owl-next:hover {
+	background: transparent !important;
+}
+.owl-prev { 
+	left: -30%; 
+}
+.owl-next { 
+	right: -25%; 
+}
+.navShape {
+	margin: 0 auto;
+	background: #fed137;
+	animation: morph1 8s ease-in-out infinite;
+	border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	height: 6rem;
+	transition: all 1s ease-in-out;
+	width: 6rem;
+}
+.team-member {
+	text-align: center;
+}
+.team-member img {
+	width: 14rem;
+	height: 14rem;
+}
+#shape1 {
+	margin: 0 auto;
+	background: #fed137;
+	animation: morph1 8s ease-in-out infinite;
+	border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	height: 15rem;
+	transition: all 1s ease-in-out;
+	width: 15rem;
+}
+
+@keyframes morph1 {
+	0% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+
+	50% {
+		border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+
+	100% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+}
+
+#shape2 {
+	margin: 0 auto;
+	background: #fed137;
+	animation: morph2 8s ease-in-out infinite;
+	border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
+	height: 15rem;
+	transition: all 1s ease-in-out;
+	width: 15rem;
+}
+
+@keyframes morph2 {
+	0% {
+		border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
+	}
+
+	50% {
+		border-radius: 70% 50% 80% 70% / 60% 30% 70% 60%;
+	}
+
+	100% {
+		border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
+	}
+}
+
+#shape3 {
+	margin: 0 auto;
+	background: #fed137;
+	animation: morph3 8s ease-in-out infinite;
+	border-radius: 70% 60% 50% 30% / 30% 50% 60% 70%;
+	height: 15rem;
+	transition: all 1s ease-in-out;
+	width: 15rem;
+}
+
+@keyframes morph3 {
+	0% {
+		border-radius: 70% 60% 50% 30% / 30% 50% 60% 70%;
+	}
+
+	50% {
+		border-radius: 70% 50% 20% 70% / 60% 30% 70% 60%;
+	}
+
+	100% {
+		border-radius: 70% 60% 50% 30% / 30% 50% 60% 70%;
+	}
+}
+.number {
+	text-decoration: none;
+	outline: none;
+	color: white;
+}
+.number:hover {
+	color: white;
+}
+#email {
+	margin: 2rem;
+	text-decoration: none;
+	outline: none;
+	text-align: center; 
+	font-size: 4vh;
+	color: #fed137;
+}
+
+.portfolio-item {
+	max-width: min-content;
+	transform: perspective(1000px);
+	transform-style: preserve-3d;
+	margin: 5vh;
+}
+.offset {
+	margin-top: 4vw;
+}
+.portfolio-image {
+	height: 40vw;
+}
+.portfolio-item-description {
+	color: white;
+	margin: 0px;
+	position: absolute;
+	top:50%; 
+	left: -20%;
+	transform: translateZ(100px);
+	font-family: 'Montserrat', sans-serif;
+}
+.portfolio-tite {
+	font-size: 3vw;
+	color: #fdd137;
+	margin: 0px;
+}
+.portfolio-subtitle {
+	font-size: 1vw;
+	float: right;
+	margin: 0px;
+}
+
+#btn-close-modal {
+	width:100%;
+	text-align: center;
+	cursor: url('../assets/cursor-2.png'), pointer !important;
+	color:#fff;
+	margin-top: 40px !important;
+}
+.closebt {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	cursor: url('../assets/cursor-2.png'), pointer;
+}
+.closebt:hover {
+	transform: rotate(90deg);
+	transform: all 0.2s;
+	cursor: url('../assets/cursor-2.png'), pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	#logo {
+		width: 75%;
+		top: 20%;
+	}
+	#tagline {  
+		color: #fdd137;
+		left: 30%;
+		top: 70%;
+		font-size: 12vw;
+		margin-right: 20px; 
+	}
+	.section_title {
+		font-size: 8vh;
+		margin-right: 5vh;
+	}
+	.section_text {
+		font-size: 3vh; 
+		margin: 5vh;
+	}
+	.kaomoji {
+		font-size: 4vh; 
+		margin-right: 5vh;
+	}
+	.card-container {
+		margin: 0 5%;
+	}
+	.card_title {
+		font-size: 7vh;
+	}
+	.card_text {
+		font-size: 2vh;
+	}
+	.navShape {
+		height: 2rem;
+		width: 2rem;
+	}
+	.owl-prev img, .owl-next img{
+		width: 32px;
+	}
+	#email {
+		font-size: 3vh;
+	}
+	.portfolio-item {
+		margin: 2vh;
+	}
+	.portfolio-image {
+		height: 90vw;
+	}
+	.portfolio-tite {
+		font-size: 6vw;
+	}
+	.portfolio-subtitle {
+		font-size: 3vw;
+	}
+	.offset {
+		margin-top: 0;
+	}
+}
