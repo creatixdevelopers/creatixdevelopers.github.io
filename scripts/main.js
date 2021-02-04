@@ -1,3 +1,10 @@
+// ****************************************** 
+// 	Author: Creatix Developers				*
+// 	Email: creatixdevelopers@gmail.com  	*
+// 	Last Updated: 02-05-2021 				*
+// ******************************************
+
+// Magnet Scripts
 let mm = new MagnetMouse({
   magnet: {
     element: '.magnet',
@@ -24,7 +31,7 @@ function isTouchDevice() {
 	return (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
 }
 		
-$(document).ready(function() { 
+$(document).ready(function() {
 
 	// destroy tilt is 
 	if (isTouchDevice()) {
@@ -52,10 +59,20 @@ $(document).ready(function() {
 		retina_detect: true,
 	});
 
-
 	// Sparticles.js initialization
 	let $el = $("#portfolio_background");
-	let mySparticles = new Sparticles($el[0], { count:500, shape:"triangle", style:"both", minSize:1, maxSize:10, direction:120, speed:0, parallax:20, drift:4, color:"white" });
+	let mySparticles = new Sparticles($el[0], { 
+		count:500, 
+		shape:"triangle", 
+		style:"both", 
+		minSize:1, 
+		maxSize:10, 
+		direction:120, 
+		speed:0, 
+		parallax:20, 
+		drift:4, 
+		color:"white" 
+	});
 	$(document).ready(function() {
 	  setTimeout(function() {
 	    	$("#portfolio").css("position", "absolute");
@@ -100,7 +117,18 @@ $(document).ready(function() {
 
 	// Sparticles.js in modal
     let $el2 = $("#modal_background");
-	let mySparticles2 = new Sparticles($el2[0], { count:500, shape:"random", style:"stroke", minSize:1, maxSize:10, direction:-50, speed:1.9, parallax:5, "color":["#fdd137","#ffffff"] });
+	let mySparticles2 = new Sparticles($el2[0], { 
+		count:500, 
+		shape:"random", 
+		style:"stroke", 
+		minSize:1, 
+		maxSize:10, 
+		direction:-50, 
+		speed:1.9, 
+		parallax:5, 
+		"color":["#fdd137","#ffffff"] 
+	});
+
 	$(document).ready(function() {
 	  setTimeout(function() {
 	    	$("#modal_content").css("position", "absolute");
@@ -114,6 +142,7 @@ $(document).ready(function() {
 		}
 	});
 
+	//Clientile Carousel
 	$('.owl-carousel').owlCarousel({
 	    loop:true,
 	    margin:10,

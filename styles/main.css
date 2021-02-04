@@ -1,53 +1,38 @@
+/**************************************** 
+	Author: Creatix Developers			*
+	Email: creatixdevelopers@gmail.com  *
+	Last Updated: 02-05-2021 			*
+****************************************/
+
+/**************************************** 
+	1. Common Styles					*
+	2. Custom Scrollbar					*
+	3. Main Banner						*
+	4. What We Do 						*
+	5. Clientile						*
+	6. Who We are						*
+	7. Modal Styles						*
+	8. Media Queries 					*
+*****************************************/
+
+/********* START COMMON STYLES **********/
 * {
 	cursor: url('../assets/cursor.png'), pointer;
 }
 .interactive {
 	cursor: url('../assets/cursor-2.png'), pointer;
 }
-::-webkit-scrollbar {
-	width: 7px;
+.navShape {
+	margin: 0 auto;
+	background: #fed137;
+	animation: morph1 8s ease-in-out infinite;
+	border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	height: 6rem;
+	transition: all 1s ease-in-out;
+	width: 6rem;
 }
-::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px grey; 
-	border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-	background: #fed136; 
-	border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-	background: #fed136; 
-}
-.categoryModalButton {
-	outline: none !important;
-}
-#particles-js {
-	background-color: black;
-	 margin: 0px;
-	 height: 100vh;
-	 width: 100%;
-}
-#logo {
-	position: absolute;
-	width: 50%;
-	top: 15%;
-}
-#tagline {
-	position: absolute;
-	top: 60%;
-	left: 60%;
+.body {
 	margin: 0px;
-	color: white;
-	text-align: right;  
-	font-size: 6vw;
-	font-family: 'VT323', monospace;
-	line-height: 0.8
-}
-.magnet {
-	display: inline-block;
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	transition: all .5s ease;
 }
 .section_title {
 	font-size: 15vh;
@@ -76,8 +61,62 @@
 	font-family: 'Montserrat', sans-serif; 
 	color: white
 }
+/********* END COMMON STYLES **********/
+
+
+/********* CUSTOM SCROLLBAR **********/
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background: #fed136; 
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #fed136; 
+}
+/********* END CUSTOM SCROLLBAR **********/
+
+
+/********* START MAIN BANNER **********/
+#particles-js {
+	background-color: black;
+	margin: 0px;
+	height: 100vh;
+	width: 100%;
+}
+#logo {
+	position: absolute;
+	width: 50%;
+	top: 15%;
+}
+#tagline {
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	margin: 0px;
+	color: white;
+	text-align: right;  
+	font-size: 6vw;
+	font-family: 'VT323', monospace;
+	line-height: 0.8
+}
+.magnet {
+	display: inline-block;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transition: all .5s ease;
+}
+/********* END MAIN BANNER **********/
+
+
+/********* START WHAT WE DO **********/
 .card-container {
-	margin: 0 10%;
+	margin: 0 10% !important;
 }
 .glass_card {
 	border-radius: 15px;
@@ -98,15 +137,38 @@
 	font-family: 'VT323', monospace;
 }
 .card_btn {
-	border-radius: 20px;
+	border-radius: 25px !important;
 	transform: translateZ(30px);
 }
 .card_btn:hover {
 	cursor: url('../assets/cursor-2.png'), pointer !important;
 }
+.project {
+	max-width:80%; 
+	margin: 0 auto;
+}
+.project .project-text {
+	display: flex; 
+	align-items: center; 
+	color: white; 
+	font-size: 3vh;
+}
+.categoryModalButton {
+	outline: none !important;
+}
+/********* END WHAT WE DO **********/
+
+
+/********* START CLIENTILE  **********/
+.owl-carousel {
+	margin: 0 auto; 
+}
+.owl-carousel .item {
+	width: min-content"
+}
 .owl-carousel .owl-stage {
-  	display: flex;
-  	align-items: center;
+	display: flex;
+	align-items: center;
 }
 .owl-item {
 	display: flex !important;
@@ -126,22 +188,20 @@
 	background: transparent !important;
 }
 .owl-prev { 
-	left: -30%; 
+  	left: -30%; 
 }
 .owl-next { 
-	right: -25%; 
+  	right: -25%; 
 }
-.navShape {
-	margin: 0 auto;
-	background: #fed137;
-	animation: morph1 8s ease-in-out infinite;
-	border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-	height: 6rem;
-	transition: all 1s ease-in-out;
-	width: 6rem;
-}
+/********* END CLIENTILE  **********/
+
+
+/********* START WHO WE ARE  **********/
 .team-member {
 	text-align: center;
+}
+.team-member h3 {
+	font-weight: bold;
 }
 .team-member img {
 	width: 14rem;
@@ -156,21 +216,17 @@
 	transition: all 1s ease-in-out;
 	width: 15rem;
 }
-
 @keyframes morph1 {
 	0% {
 		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 	}
-
 	50% {
 		border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
 	}
-
 	100% {
 		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 	}
 }
-
 #shape2 {
 	margin: 0 auto;
 	background: #fed137;
@@ -180,21 +236,17 @@
 	transition: all 1s ease-in-out;
 	width: 15rem;
 }
-
 @keyframes morph2 {
 	0% {
 		border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
 	}
-
 	50% {
 		border-radius: 70% 50% 80% 70% / 60% 30% 70% 60%;
 	}
-
 	100% {
 		border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
 	}
 }
-
 #shape3 {
 	margin: 0 auto;
 	background: #fed137;
@@ -204,16 +256,13 @@
 	transition: all 1s ease-in-out;
 	width: 15rem;
 }
-
 @keyframes morph3 {
 	0% {
 		border-radius: 70% 60% 50% 30% / 30% 50% 60% 70%;
 	}
-
 	50% {
 		border-radius: 70% 50% 20% 70% / 60% 30% 70% 60%;
 	}
-
 	100% {
 		border-radius: 70% 60% 50% 30% / 30% 50% 60% 70%;
 	}
@@ -234,12 +283,28 @@
 	font-size: 4vh;
 	color: #fed137;
 }
+/********* END WHO WE ARE  **********/
 
+
+/********* START MODAL STYLES **********/
+.project {
+	max-width: 80% !important; 
+}
+.modal-content .section_title {
+	text-align: center;
+	font-family: 'VT323', monospace; 
+	color: white;
+}
 .portfolio-item {
 	max-width: min-content;
 	transform: perspective(1000px);
 	transform-style: preserve-3d;
 	margin: 5vh;
+}
+.modal-title {
+	text-align: center;
+	font-family: 'VT323', monospace; 
+	color: white;
 }
 .offset {
 	margin-top: 4vw;
@@ -256,7 +321,7 @@
 	transform: translateZ(100px);
 	font-family: 'Montserrat', sans-serif;
 }
-.portfolio-tite {
+.portfolio-title {
 	font-size: 3vw;
 	color: #fdd137;
 	margin: 0px;
@@ -266,7 +331,6 @@
 	float: right;
 	margin: 0px;
 }
-
 #btn-close-modal {
 	width:100%;
 	text-align: center;
@@ -287,7 +351,10 @@
 	transform: all 0.2s;
 	cursor: url('../assets/cursor-2.png'), pointer;
 }
+/********* END MODAL STYLES **********/
 
+
+/********* START MEDIA QUERIES **********/
 @media only screen and (max-width: 600px) {
 	#logo {
 		width: 75%;
@@ -331,19 +398,28 @@
 	#email {
 		font-size: 3vh;
 	}
+	.reorder {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 	.portfolio-item {
-		margin: 2vh;
+		margin: 2.5vh;
+		float: right;
 	}
 	.portfolio-image {
 		height: 90vw;
 	}
-	.portfolio-tite {
-		font-size: 6vw;
+	.portfolio-title {
+		font-size: 7vw;
 	}
 	.portfolio-subtitle {
 		font-size: 3vw;
+	}
+	.project .project-text {
+		font-size: 2vh;
 	}
 	.offset {
 		margin-top: 0;
 	}
 }
+/********* END MEDIA QUERIES **********/
