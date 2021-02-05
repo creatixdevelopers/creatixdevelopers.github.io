@@ -118,9 +118,15 @@ $(document).ready(function() {
         animatedIn:'lightSpeedIn',
         animatedOut:'bounceOutDown',
         color:'#000',
+	});
+	//virtualEventsModal Button initialization
+	$(".virtualEventsModalButton").animatedModal({
+        animatedIn:'lightSpeedIn',
+        animatedOut:'bounceOutDown',
+        color:'#000',
     });
 	// modal initialization
-	$(".categoryModalButton").animatedModal({
+	$(".solutionsModalButton").animatedModal({
         animatedIn:'lightSpeedIn',
         animatedOut:'bounceOutDown',
         color:'#000',

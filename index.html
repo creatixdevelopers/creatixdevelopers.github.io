@@ -52,7 +52,8 @@
 		<!-- Start What We Do -->
 		<div id="portfolio_background">
 			<div id="portfolio">
-				<h1 class="section_title" style="color: white; font-weight: lighter; font-family: 'VT323', monospace;">What we do</h1>
+				<h1 class="section_title d-none d-lg-block" style="color: white; font-weight: lighter; font-family: 'VT323', monospace;">What we do</h1>
+				<h1 class="section_title d-block d-lg-none" style="color: white; font-size: 9vh; font-weight: lighter; font-family: 'VT323', monospace;">What we do</h1>
 				<div class="row card-container">
 					<div class="col-xs-6 col-lg-6 col-md-12 col-sm-12">
 						<div class="glass_card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
@@ -98,7 +99,7 @@
 								<p>Memorable events don't just happen. They just happen to be our business.</p>
 							</div>
 							<button type="button" class="btn btn-light card_btn">
-								<a class="categoryModalButton interactive" href="#categoryModal" style="text-decoration: none; color: black">
+								<a class="virtualEventsModalButton interactive" href="#virtualEventsModal" style="text-decoration: none; color: black">
 									See more
 								</a>
 							</button>
@@ -115,13 +116,13 @@
 								<br>
 							</div>
 							<button type="button" class="btn btn-light card_btn">
-								<a class="categoryModalButton interactive" href="#categoryModal" style="text-decoration: none; color: black">
+								<a class="solutionsModalButton interactive" href="#solutionsModal" style="text-decoration: none; color: black">
 									See more
 								</a>
 							</button>
 						</div>
-					</div>
-				</div><br>
+					</div><br>
+				</div>
 			</div>
 		</div>
 		<!-- End What We Do -->
@@ -137,17 +138,16 @@
 					</div>
 					
 					<!-- Category Title -->
-					<h1 class="section_title">Website</h1>
+					<h1 class="section_title">Websites</h1>
 
 					<!-- Project 1 -->
 					<div class="project container d-flex justify-content-center">
 						<div class="col-lg-12 row">
 							<div class="poject-image col-lg-6">
 								<div class="portfolio-item" data-tilt data-tilt-max="5">
-									<img class="portfolio-image interactive" src="./assets/website/1.png">
-									<div class="portfolio-item-description">
+									<a href="https://samathaanand.com"><img class="portfolio-image interactive" src="./assets/website/samatha.png"></a>
+									<div class="portfolio-item-description" style="left: 25%; right: -20%;">
 										<h1 class="portfolio-title interactive">Samatha Anand</h1>
-										<p class="portfolio-subtitle interactive"></p>
 									</div>
 								</div>
 							</div>
@@ -155,6 +155,9 @@
 								<div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+									<a href="https://samathaanand.com">
+										<button type="button" class="btn btn-outline-warning">View Project</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -164,15 +167,17 @@
 					<div class="project container d-flex justify-content-center">
 						<div class="reorder col-lg-12 row">
 							<div class="project-text col-lg-6">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua<br>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<a href="http://colours360.in">
+									<button type="button" class="btn btn-outline-warning">View Project</button>
+								</a>
 							</div>
 							<div class="col-lg-6">
 								<div class="portfolio-item" data-tilt data-tilt-max="5" style="float: right;">
-									<img class="portfolio-image interactive" src="./assets/website/2.png">
+									<a href="http://colours360.in"><img class="portfolio-image interactive" src="./assets/website/colours.png"></a>
 									<div class="portfolio-item-description">
 										<h1 class="portfolio-title interactive">Colours 360</h1>
-										<p class="portfolio-subtitle interactive">Event Planner</p>
 									</div>
 								</div>
 							</div>
@@ -184,10 +189,9 @@
 						<div class="col-lg-12 row">
 							<div class="poject-image col-lg-6">
 								<div class="portfolio-item" data-tilt data-tilt-max="5">
-									<img class="portfolio-image interactive" src="./assets/website/3.png">
-									<div class="portfolio-item-description">
+									<a href="https://valedglobalprograms.com"><img class="portfolio-image interactive" src="./assets/website/valed.png"></a>
+									<div class="portfolio-item-description" style="left: 30%; right: -20%;">
 										<h1 class="portfolio-title interactive">ValEd Initiative</h1>
-										<p class="portfolio-subtitle interactive"></p>
 									</div>
 								</div>
 							</div>
@@ -195,6 +199,9 @@
 								<div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+									<a href="https://valedglobalprograms.com">
+										<button type="button" class="btn btn-outline-warning">View Project</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -204,15 +211,17 @@
 					<div class="project container d-flex justify-content-center">
 						<div class="reorder col-lg-12 row">
 							<div class="project-text col-lg-6">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua<br>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<a href="https://dakshinbharat.com">
+									<button type="button" class="btn btn-outline-warning">View Project</button>
+								</a>
 							</div>
 							<div class="col-lg-6">
 								<div class="portfolio-item" data-tilt data-tilt-max="5" style="float: right;">
-									<img class="portfolio-image interactive" src="./assets/website/4.png">
+									<a href="https://dakshinbharat.com"><img class="portfolio-image interactive" src="./assets/website/dakshin-bharat.png"></a>
 									<div class="portfolio-item-description">
 										<h1 class="portfolio-title interactive">Dakshin Bharat</h1>
-										<p class="portfolio-subtitle interactive">Newspaper Company</p>
 									</div>
 								</div>
 							</div>
@@ -224,10 +233,9 @@
 						<div class="col-lg-12 row">
 							<div class="poject-image col-lg-6">
 								<div class="portfolio-item" data-tilt data-tilt-max="5">
-									<img class="portfolio-image interactive" src="./assets/website/5.png">
-									<div class="portfolio-item-description">
+									<a href="https://lunchfinder.glitch.me/"><img class="portfolio-image interactive" src="./assets/website/lunch-finder.png"></a>
+									<div class="portfolio-item-description" style="left: 35%; right: -20%;">
 										<h1 class="portfolio-title interactive">Lunch Finder</h1>
-										<p class="portfolio-subtitle interactive"></p>
 									</div>
 								</div>
 							</div>
@@ -235,6 +243,9 @@
 								<div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+									<a href="https://lunchfinder.glitch.me/">
+										<button type="button" class="btn btn-outline-warning">View Project</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -266,10 +277,9 @@
 						<div class="col-lg-12 row">
 							<div class="poject-image col-lg-6">
 								<div class="portfolio-item" data-tilt data-tilt-max="5">
-									<a href="https://thefoodstore.in/"><img class="portfolio-image interactive" src="./assets/ecommerce/1.png"></a>
-									<div class="portfolio-item-description">
+									<a href="https://thefoodstore.in/"><img class="portfolio-image interactive" src="./assets/ecommerce/food-store.png"></a>
+									<div class="portfolio-item-description" style="left: 30%; right: -20%;">
 										<h1 class="portfolio-title interactive">The Food Store</h1>
-										<p class="portfolio-subtitle interactive"></p>
 									</div>
 								</div>
 							</div>
@@ -277,6 +287,9 @@
 								<div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+									<a href="https://thefoodstore.in/">
+										<button type="button" class="btn btn-outline-warning">View Project</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -286,15 +299,18 @@
 					<div class="project container d-flex justify-content-center">
 						<div class="reorder col-lg-12 row">
 							<div class="project-text col-lg-6">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua<br>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<br>
+								<a href="http://avoncosmetics.in/">
+									<button type="button" class="btn btn-outline-warning">View Project</button>
+								</a>
 							</div>
 							<div class="col-lg-6">
 								<div class="portfolio-item" data-tilt data-tilt-max="5" style="float: right;">
-									<a href="http://www.avoncosmetics.in/"><img class="portfolio-image interactive" src="./assets/ecommerce/2.png"></a>
+									<a href="http://www.avoncosmetics.in/"><img class="portfolio-image interactive" src="./assets/ecommerce/avon.png"></a>
 									<div class="portfolio-item-description">
 										<h1 class="portfolio-title interactive">Avon Cosmetics</h1>
-										<p class="portfolio-subtitle interactive"></p>
 									</div>
 								</div>
 							</div>
@@ -306,8 +322,8 @@
 						<div class="col-lg-12 row">
 							<div class="poject-image col-lg-6">
 								<div class="portfolio-item" data-tilt data-tilt-max="5">
-									<a href="https://milecart.com/"><img class="portfolio-image interactive" src="./assets/ecommerce/3.png"></a>
-									<div class="portfolio-item-description">
+									<a href="https://milecart.com/"><img class="portfolio-image interactive" src="./assets/ecommerce/milecart.png"></a>
+									<div class="portfolio-item-description" style="left: 60%; right: -20%;">
 										<h1 class="portfolio-title interactive">Mile Cart</h1>
 										<p class="portfolio-subtitle interactive"></p>
 									</div>
@@ -317,28 +333,70 @@
 								<div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+									<a href="https://milecart.in/">
+										<button type="button" class="btn btn-outline-warning">View Project</button>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
 		<!-- End Ecommerce Modal -->
-	
-		<!-- Start Category Modal -->
-		<div id="categoryModal" style="background-color: black">
+
+		<!-- Start Virtual Events Modal -->
+		<div id="virtualEventsModal" style="background-color: black">
 			<div id="modal_background">
 				<div class="modal-content" id="modal_content" style="overflow: hidden; background-color: transparent;">
 					
 					<!-- Modal Close Button -->
-					<div  id="btn-close-modal" class="close-categoryModal">
+					<div  id="btn-close-modal" class="close-virtualEventsModal">
 						<img class="closebt" src="assets/closebt.svg">
 					</div>
 					
 					<!-- Category Title -->
-					<h1 class="section_title">Category Name</h1>
+					<h1 class="section_title">Virtual Events</h1>
+					<br>
+					<p class="description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+						sed eiusmod tempor incididunt ut labore et dolore magna aliqua
+					</p>
+
+					<section id="latest" class="latest">
+						<div class="container-fluid" data-aos="fade-up">
+							<div class="row">
+								<div class="col-lg-5 latest-box" data-aos="flip-left" style="background-image: url('https://img.youtube.com/vi/6bL3sWS4zEk/maxresdefault.jpg'); border: 2px solid #fed136; margin: 0 auto; margin-bottom: 20px;">
+									<h3 style="color: #000; text-align: center; background-color: #fed136;">FefCon - 2020</h3>
+									<a href="https://www.youtube.com/watch?v=gQCSPw0ThEE" class="venobox play-btn mb-4 vbox-item" data-vbtype="video" data-autoplay="true"></a>
+								</div>
+								<div class="col-lg-1"></div>
+								<div class="col-lg-5 latest-box" data-aos="flip-left" style="background-image: url('https://img.youtube.com/vi/H1cxNt14flc/maxresdefault.jpg'); border: 2px solid #fed136; margin: 0 auto; margin-bottom: 20px">
+									<h3 style="color: #000; text-align: center; background-color: #fed136;">Virtual Navratri Mahamahotsav</h3>
+									<a href="https://www.youtube.com/watch?v=lMyJjkWV93w" class="venobox play-btn mb-4 vbox-item" data-vbtype="video" data-autoplay="true"></a>
+								</div>
+							</div>
+							<br>
+						</div>
+					</section>
+				
+				</div>
+			</div>
+		</div>
+		<!-- End Virtual Events Modal -->
+	
+		<!-- Start Solutions Modal -->
+		<div id="solutionsModal" style="background-color: black">
+			<div id="modal_background">
+				<div class="modal-content" id="modal_content" style="overflow: hidden; background-color: transparent;">
+					
+					<!-- Modal Close Button -->
+					<div  id="btn-close-modal" class="close-solutionsModal">
+						<img class="closebt" src="assets/closebt.svg">
+					</div>
+					
+					<!-- Category Title -->
+					<h1 class="section_title">Solutions</h1>
 					
 					<!-- Project 1 -->
 					<div class="project container d-flex justify-content-center">
@@ -435,25 +493,40 @@
 			<br><br>
 			<div class="owl-carousel owl-theme" style="width: 50%;">
 				<div class="item">
-					<a href="http://www.colours360.in/"><img src="./assets/logo/1.png" style="width: 200px"></a>
+					<a href="http://www.colours360.in/"><img src="./assets/logo/colours.png" style="width: 180px"></a>
 				</div>
 				<div class="item">
-					<a href="https://valedglobalprograms.com/"><img src="./assets/logo/2.png" style="width: 200px"></a>
+					<a href="https://valedglobalprograms.com/"><img src="./assets/logo/valed.png" style="width: 180px"></a>
 				</div>
 				<div class="item">
-					<a href="http://www.avoncosmetics.in/"><img src="./assets/logo/3.png" style="width: 200px"></a>
+					<a href="https://microlabsltd.com/"><img src="./assets/logo/microlabs.png" style="width: 180px"></a>
 				</div>
 				<div class="item">
-					<a href="https://dakshinbharat.com/"><img src="./assets/logo/4.png" style="width: 200px"></a>
+					<a href="http://shrisiddeshwartirth.com/"><img src="./assets/logo/sba.png" style="width: 180px"></a>
 				</div>
 				<div class="item">
-					<a href="https://samathaanand.com/"><img src="./assets/logo/5.png" style="width: 200px"></a>
+					<a href="http://avoncosmetics.in/"><img src="./assets/logo/avon.png" style="width: 180px"></a>
 				</div>
 				<div class="item">
-					<a href="https://thefoodstore.in/"><img src="./assets/logo/6.png" style="width: 200px"></a>
+					<a href="https://sturlite.com/"><img src="./assets/logo/sturlite.png" style="width: 180px"></a>
 				</div>
 				<div class="item">
-					<a href="https://thefoodstore.in/"><img src="./assets/logo/7.png" style="width: 200px"></a>
+					<a href="https://dakshinbharat.com/"><img src="./assets/logo/dakshin-bharat.png" style="width: 180px"></a>
+				</div>
+				<div class="item">
+					<a href="https://thefoodstore.in/"><img src="./assets/logo/food-store.png" style="width: 180px"></a>
+				</div>
+				<div class="item">
+					<a href="http://shrisiddeshwartirth.com/"><img src="./assets/logo/sba.png" style="width: 180px"></a>
+				</div>
+				<div class="item">
+					<a href="https://feverfoundationofindia.org/fefcon"><img src="./assets/logo/fefcon.png" style="width: 180px"></a>
+				</div>
+				<div class="item">
+					<a href="https://milecart.com"><img src="./assets/logo/milecart.png" style="width: 180px"></a>
+				</div>
+				<div class="item">
+					<a href="https://thefoodstore.in/demo"><img src="./assets/logo/have-nuts.png" style="width: 180px"></a>
 				</div>
 			</div>
 			<br><br>
