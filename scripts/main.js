@@ -107,7 +107,18 @@ $(document).ready(function() {
 			animation.play(animation.getStatus() === 'end' ? -1 : 1);
 		}, 1000)
 	});
-
+	//websiteModalButton initialization
+	$(".websiteModalButton").animatedModal({
+        animatedIn:'lightSpeedIn',
+        animatedOut:'bounceOutDown',
+        color:'#000',
+	});
+	//EcommerceModal Button initialization
+	$(".ecommerceModalButton").animatedModal({
+        animatedIn:'lightSpeedIn',
+        animatedOut:'bounceOutDown',
+        color:'#000',
+    });
 	// modal initialization
 	$(".categoryModalButton").animatedModal({
         animatedIn:'lightSpeedIn',

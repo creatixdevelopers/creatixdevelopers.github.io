@@ -42,6 +42,10 @@
 	font-size: 4vh; 
 	margin: 5vh;
 }
+li{
+	font-size: 4vh !important; 
+	margin-left: 5vh;
+}
 .kaomoji {
 	font-size: 8vh; 
 	margin-left: 5vh; 
@@ -152,6 +156,12 @@
 	align-items: center; 
 	color: white; 
 	font-size: 3vh;
+}
+.websiteModalButton {
+	outline: none !important;
+}
+.ecommerceModalButton {
+	outline: none !important;
 }
 .categoryModalButton {
 	outline: none !important;
@@ -350,6 +360,12 @@
 	transform: rotate(90deg);
 	transform: all 0.2s;
 	cursor: url('../assets/cursor-2.png'), pointer;
+}
+.description{
+	text-align: center;
+    font-family: 'VT323', monospace;
+	color: white;
+	font-size: 3vh;
 }
 /********* END MODAL STYLES **********/
 
