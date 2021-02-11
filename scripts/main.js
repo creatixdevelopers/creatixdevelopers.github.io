@@ -37,20 +37,19 @@ $(window).on('load', function(){
 });
 
 // Magnet Scripts
-let mm = new MagnetMouse({
-  magnet: {
-    element: '.magnet',
-    distance: 2,
-  },
-  inCallback: function (data) {
-    data['elem']['node'].style.color='#fdd137';
-  },
-  outCallback: function (data) {
-    data['elem']['node'].style.color='white';
-  },
-});
-
-mm.init();
+// let mm = new MagnetMouse({
+//   magnet: {
+//     element: '.magnet',
+//     distance: 2,
+//   },
+  // inCallback: function (data) {
+  //   data['elem']['node'].style.color='#fdd137';
+  // },
+  // outCallback: function (data) {
+  //   data['elem']['node'].style.color='white';
+  // },
+// });
+// mm.init();
 
 function loadSite(){
 	$("#preloader").fadeOut(1000, function() { $(this).remove(); });
@@ -59,13 +58,18 @@ function loadSite(){
 	function isTouchDevice() {
 		return (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
 	}
+
+	console.log(isTouchDevice());
 			
 	$(document).ready(function() {
-		console.log(isTouchDevice())
 		// destroy tilt is 
 		if (isTouchDevice()) {
 			$("[data-tilt]").each(function() {this.vanillaTilt.destroy()});
 		}
+
+		shuffleLetters(document.getElementById("first"), {fps:10});
+		shuffleLetters(document.getElementById("second"), {fps:10});
+		shuffleLetters(document.getElementById("third"), {fps:10});
 
 		// Particles.js initialization
 		var number_of_particles = screen.width > 700 ? 150: 80;
@@ -83,7 +87,10 @@ function loadSite(){
 				nb: number_of_particles,
 				anim: {
 					speed: speed,
-				}
+				},
+				move: {
+					enable: true,
+				},
 			},
 			retina_detect: true,
 		});
@@ -149,7 +156,7 @@ function loadSite(){
 				return;
 			}
 			mySparticles2 = new Sparticles($el2[0], { 
-				count:500, 
+				count:250, 
 				shape:"random", 
 				style:"stroke", 
 				minSize:1, 
