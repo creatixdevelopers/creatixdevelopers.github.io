@@ -58,10 +58,6 @@ body {
 	font-size: 4vh; 
 	margin: 5vh;
 }
-li{
-	font-size: 4vh !important; 
-	margin-left: 5vh;
-}
 .kaomoji {
 	font-size: 8vh; 
 	margin-left: 5vh; 
@@ -409,7 +405,8 @@ li{
 	text-align: center;
 	cursor: url('../assets/cursor-2.png'), pointer !important;
 	color:#fff;
-	margin-top: 40px !important;
+	width:98%;
+	position: fixed;
 }
 .closebt {
 	-webkit-transition: all 0.2s;
@@ -418,6 +415,9 @@ li{
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
 	cursor: url('../assets/cursor-2.png'), pointer;
+	float: right;
+	margin-top: 5px;
+	z-index: 2;
 }
 .closebt:hover {
 	transform: rotate(90deg);
@@ -588,7 +588,7 @@ li{
 		margin-right: 5vh;
 	}
 	.section_text {
-		font-size: 3vh; 
+		font-size: 2.6vh; 
 		margin: 5vh;
 	}
 	.kaomoji {
@@ -617,6 +617,9 @@ li{
 	.reorder {
 		display: flex;
 		flex-direction: column-reverse;
+	}
+	.closebt {
+		max-width: 13vw;
 	}
 	.project {
 		margin-top: 40px;
