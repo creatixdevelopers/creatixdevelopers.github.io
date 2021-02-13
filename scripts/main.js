@@ -1,7 +1,7 @@
 // // ****************************************** 
 // // 	Author: Creatix Developers				*
 // // 	Email: creatixdevelopers@gmail.com  	*
-// // 	Last Updated: 02-09-2021 				*
+// // 	Last Updated: 13-02-2021 				*
 // // ******************************************
 
 $(window).on('load', function(){
@@ -35,21 +35,6 @@ $(window).on('load', function(){
 		currentStep++;
 	}
 });
-
-// Magnet Scripts
-// let mm = new MagnetMouse({
-//   magnet: {
-//     element: '.magnet',
-//     distance: 2,
-//   },
-  // inCallback: function (data) {
-  //   data['elem']['node'].style.color='#fdd137';
-  // },
-  // outCallback: function (data) {
-  //   data['elem']['node'].style.color='white';
-  // },
-// });
-// mm.init();
 
 function loadSite(){
 	$("#preloader").fadeOut(1000, function() { $(this).remove(); });
@@ -186,7 +171,6 @@ function loadSite(){
 			} else if(content_name === 'solutions') {
 				$('#solutionsContent').css('display', 'block');
 			}
-
 			setModalSparticles();
 		})
 
