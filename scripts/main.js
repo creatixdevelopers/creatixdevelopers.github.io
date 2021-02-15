@@ -80,6 +80,7 @@ function loadSite(){
 			retina_detect: true,
 		});
 
+
 		// Sparticles.js initialization
 		let $el = $("#portfolio_background");
 		let mySparticles = new Sparticles($el[0], { 
@@ -129,74 +130,6 @@ function loadSite(){
 			}, 1000)
 		});
 
-		// Sparticles.js in modal
-	    let $el2 = $("#modal_background");
-	    mySparticles2 = null;
-
-		function setModalSparticles() {
-			if (mySparticles2) {
-				mySparticles2.setCanvasSize($('#modal_content').width(), $('#modal_content').height());
-				mySparticles2.start();
-				mySparticles2.resetSparticles();
-				return;
-			}
-			mySparticles2 = new Sparticles($el2[0], { 
-				count:250, 
-				shape:"random", 
-				style:"stroke", 
-				minSize:1, 
-				maxSize:10, 
-				direction:-50, 
-				speed:1.9, 
-				parallax:5, 
-				"color":["#fdd137","#ffffff"] 
-			});
-
-			
-			setTimeout(function() {
-				$("#modal_content").css("position", "absolute");
-			}, 500);
-		}
-
-		$(".portfolioModalButton").on('click', function() {
-			mySparticles.stop();
-			var content_name = $(this).attr('name');
-
-			if(content_name === 'websites') {
-				$('#websitesContent').css('display', 'block');
-			} else if(content_name === 'eCommerce') {
-				$('#eCommerceContent').css('display', 'block');
-			} else if(content_name === 'virtualEvents') {
-				$('#virtualEventsContent').css('display', 'block');
-			} else if(content_name === 'solutions') {
-				$('#solutionsContent').css('display', 'block');
-			}
-			setModalSparticles();
-		})
-
-		$("#btn-close-modal").on('click', function() {
-			mySparticles2.stop();
-			$(".category_content").each(function() {
-				$(this).css('display', 'none');
-			});
-			mySparticles.start();
-		})
-
-		//websiteModalButton initialization
-		$(".portfolioModalButton").animatedModal({
-	        animatedIn:'lightSpeedIn',
-	        animatedOut:'bounceOutDown',
-	        color:'#000',
-		});
-		
-	    
-	    //close modal on ESC
-	    jQuery(document).keyup(function(ev){
-			if(ev.keyCode == 27) {
-			    $('#btn-close-modal').click();
-			}
-			mySparticles.start();
-		});
 
 		//Clientile Carousel
 		$('.owl-carousel').owlCarousel({
