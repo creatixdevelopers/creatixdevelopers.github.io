@@ -1,7 +1,7 @@
 /**************************************** 
 	Author: Creatix Developers			*
 	Email: creatixdevelopers@gmail.com  *
-	Last Updated: 13-02-2021 			*
+	Last Updated: 15-02-2021 			*
 ****************************************/
 
 /**************************************** 
@@ -20,6 +20,14 @@
 /********* START COMMON STYLES **********/
 * {
 	cursor: url('../assets/cursor.png'), pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 }
 .interactive {
 	cursor: url('../assets/cursor-2.png'), pointer;
@@ -33,6 +41,7 @@
   color: black;
   background: #fed137;
 }
+
 .navShape {
 	margin: 0 auto;
 	background: #fed137;

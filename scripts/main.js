@@ -1,7 +1,7 @@
 // // ****************************************** 
 // // 	Author: Creatix Developers				*
 // // 	Email: creatixdevelopers@gmail.com  	*
-// // 	Last Updated: 13-02-2021 				*
+// // 	Last Updated: 15-02-2021 				*
 // // ******************************************
 
 $(window).on('load', function(){
@@ -36,6 +36,18 @@ $(window).on('load', function(){
 	}
 });
 
+// When loading from cache...
+
+// $(window).bind("pageshow", function(event) {
+//     loadSite();
+// });
+
+if (!!window.performance && window.performance.navigation.type === 2) {
+   loadSite();
+ } else {
+   console.log("no cache");
+ }
+
 function loadSite(){
 	$("#preloader").fadeOut(1000, function() { $(this).remove(); });
 	$("#site").fadeIn(1000).css("display", "block");
@@ -43,11 +55,11 @@ function loadSite(){
 	function isTouchDevice() {
 		return (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
 	}
-
-	console.log(isTouchDevice());
 			
 	$(document).ready(function() {
-		// destroy tilt is 
+		console.log(this.vanillaTilt);
+
+		// destroy tilt if touch device 
 		if (isTouchDevice()) {
 			$("[data-tilt]").each(function() {this.vanillaTilt.destroy()});
 		}
@@ -57,8 +69,9 @@ function loadSite(){
 		shuffleLetters(document.getElementById("third"), {fps:10});
 
 		// Particles.js initialization
-		var number_of_particles = screen.width > 700 ? 150: 80;
-		var speed = screen.width > 700 ? 1: 1;
+		var isPhone = screen.width > 700;
+		var number_of_particles = isPhone ? 150: 80;
+		var speed = screen.width > isPhone ? 1: 1;
 		particles = new particlesJS('particles-js', {
 			canvas: {
 				color_hex_bg: '#15414e',
@@ -83,8 +96,8 @@ function loadSite(){
 
 		// Sparticles.js initialization
 		let $el = $("#portfolio_background");
-		let mySparticles = new Sparticles($el[0], { 
-			count:250,
+		var mySparticles = new Sparticles($el[0], { 
+			count:isPhone ? 250 : 100,
 			shape:"triangle", 
 			style:"both", 
 			minSize:1, 
@@ -98,6 +111,8 @@ function loadSite(){
 		$(document).ready(function() {
 		  setTimeout(function() {
 		    	$("#portfolio").css("position", "absolute");
+		    	var content = $("#portfolio");
+		    	mySparticles.setCanvasSize(content.width(), content.height());
 		  }, 1000);
 		});
 
