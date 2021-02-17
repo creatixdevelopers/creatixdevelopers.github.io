@@ -56,9 +56,6 @@ body {
 	background-color: black !important;
 	overflow-x: hidden;
 }
-.p {
-	font-size: 115%;
-}
 .section_title {
 	font-size: 10vh;
 	margin-left: 5vh;
@@ -496,6 +493,9 @@ background-color: #fceb58;
 
 /********* START MEDIA QUERIES **********/
 @media only screen and (max-width: 600px) {
+	p {
+		text-align: justify;
+	}
 	#logo {
 		width: 75%;
 		top: 20%;
@@ -512,7 +512,7 @@ background-color: #fceb58;
 		margin-right: 5vh;
 	}
 	.section_text {
-		font-size: 2.6vh; 
+		font-size: 2.6vh !important; 
 		margin: 5vh;
 	}
 	.kaomoji {
@@ -527,6 +527,9 @@ background-color: #fceb58;
 	}
 	.card_text {
 		font-size: 2vh;
+	}
+	.card_text p {
+		text-align: center;
 	}
 	.navShape {
 		height: 2rem;
