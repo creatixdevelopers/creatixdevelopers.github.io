@@ -1,7 +1,7 @@
 // // ****************************************** 
 // // 	Author: Creatix Developers				*
 // // 	Email: creatixdevelopers@gmail.com  	*
-// // 	Last Updated: 15-02-2021 				*
+// // 	Last Updated: 25-02-2021 				*
 // // ******************************************
 
 $(window).on('load', function(){
@@ -43,12 +43,13 @@ $(window).on('load', function(){
 // });
 
 if (!!window.performance && window.performance.navigation.type === 2) {
-   loadSite();
+	$("#preloader").fadeOut(1000, function() { $(this).remove(); });
+	$("#site").fadeIn(1000).css("display", "block");
  } else {
    console.log("no cache");
  }
 
-function loadSite(){
+function loadSite() {
 	$("#preloader").fadeOut(1000, function() { $(this).remove(); });
 	$("#site").fadeIn(1000).css("display", "block");
 
@@ -57,7 +58,6 @@ function loadSite(){
 	}
 			
 	$(document).ready(function() {
-		console.log(this.vanillaTilt);
 
 		// destroy tilt if touch device 
 		if (isTouchDevice()) {
@@ -78,7 +78,7 @@ function loadSite(){
 				opacity: 1
 			},
 			particles: {
-			    color_hex: '#fff',
+				color_hex: '#fff',
 				opacity: 1,
 				size: 2.5,
 				size_random: true,
@@ -108,13 +108,11 @@ function loadSite(){
 			drift:4, 
 			color:"white" 
 		});
-		$(document).ready(function() {
-		  setTimeout(function() {
-		    	$("#portfolio").css("position", "absolute");
-		    	var content = $("#portfolio");
-		    	mySparticles.setCanvasSize(content.width(), content.height());
-		  }, 1000);
-		});
+		setTimeout(function() {
+			$("#portfolio").css("position", "absolute");
+			var content = $("#portfolio");
+			mySparticles.setCanvasSize(content.width(), content.height());
+		}, 500);
 
 
 		// Vivus animation options and objects
@@ -148,30 +146,30 @@ function loadSite(){
 
 		//Clientile Carousel
 		$('.owl-carousel').owlCarousel({
-		    loop:true,
-		    margin:10,
-		    nav:true,
-		    items: 3,
-		    dots: false,
-		    autoplay: true,
-		    autoplayTimeout:2000,
-	    	autoplayHoverPause:true,
-		    navText:["<div class='navShape'><img class='interactive' src='assets/arrow-left.svg'></div>",
-		    		 "<div class='navShape'><img class='interactive' src='assets/arrow-right.svg'></div>"],
-		    responsive:{
-		        0:{
-		        	margin:10,
-		            items:1
-		        },
-		        600:{
-		        	margin:10,
-		            items:1
-		        },
-		        1000:{
-		        	margin:10,
-		            items:3
-		        }
-		    }
+			loop:true,
+			margin:10,
+			nav:true,
+			items: 3,
+			dots: false,
+			autoplay: true,
+			autoplayTimeout:2000,
+			autoplayHoverPause:true,
+			navText:["<div class='navShape'><img class='interactive' src='assets/arrow-left.svg'></div>",
+					 "<div class='navShape'><img class='interactive' src='assets/arrow-right.svg'></div>"],
+			responsive:{
+				0:{
+					margin:10,
+					items:1
+				},
+				600:{
+					margin:10,
+					items:1
+				},
+				1000:{
+					margin:10,
+					items:3
+				}
+			}
 		});
 	});
 }
