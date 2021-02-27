@@ -43,8 +43,8 @@ $(window).on('load', function(){
 // });
 
 if (!!window.performance && window.performance.navigation.type === 2) {
-	$("#preloader").fadeOut(1000, function() { $(this).remove(); });
-	$("#site").fadeIn(1000).css("display", "block");
+	// will cause loadSite to be called twice!!!
+	loadSite();
  } else {
    console.log("no cache");
  }
@@ -96,53 +96,57 @@ function loadSite() {
 
 		// Sparticles.js initialization
 		let $el = $("#portfolio_background");
-		var mySparticles = new Sparticles($el[0], { 
-			count:isPhone ? 250 : 100,
-			shape:"triangle", 
-			style:"both", 
-			minSize:1, 
-			maxSize:10, 
-			direction:120, 
-			speed:0, 
-			parallax:20, 
-			drift:4, 
-			color:"white" 
-		});
-		setTimeout(function() {
-			$("#portfolio").css("position", "absolute");
-			var content = $("#portfolio");
-			mySparticles.setCanvasSize(content.width(), content.height());
-		}, 500);
 
 
-		// Vivus animation options and objects
-		var animationOptions = {
-			type: 'oneByOne',
-			duration: 40,
-			animTimimgFunction: Vivus.EASE
+		// If sparticles is not already initialized
+		if ($('.sparticles').length == 0) {
+				var mySparticles = new Sparticles($el[0], { 
+				count:isPhone ? 250 : 100,
+				shape:"triangle", 
+				style:"both", 
+				minSize:1, 
+				maxSize:10, 
+				direction:120, 
+				speed:0, 
+				parallax:20, 
+				drift:4, 
+				color:"white" 
+			});
+			setTimeout(function() {
+				$("#portfolio").css("position", "absolute");
+				var content = $("#portfolio");
+				mySparticles.setCanvasSize(content.width(), content.height());
+			}, 500);
+
+
+			// Vivus animation options and objects
+			var animationOptions = {
+				type: 'oneByOne',
+				duration: 40,
+				animTimimgFunction: Vivus.EASE
+			}
+
+			new Vivus('websiteSVG', animationOptions, function(animation) {
+				setTimeout(function() {
+					animation.play(animation.getStatus() === 'end' ? -1 : 1);
+				}, 1000)
+			});
+			new Vivus('eCommerceSVG', animationOptions, function(animation) {
+				setTimeout(function() {
+					animation.play(animation.getStatus() === 'end' ? -1 : 1);
+				}, 1000)
+			});
+			new Vivus('virtualEventsSVG', animationOptions, function(animation) {
+				setTimeout(function() {
+					animation.play(animation.getStatus() === 'end' ? -1 : 1);
+				}, 1000)
+			});
+			new Vivus('solutionsSVG', animationOptions, function(animation) {
+				setTimeout(function() {
+					animation.play(animation.getStatus() === 'end' ? -1 : 1);
+				}, 1000)
+			});
 		}
-
-		new Vivus('websiteSVG', animationOptions, function(animation) {
-			setTimeout(function() {
-				animation.play(animation.getStatus() === 'end' ? -1 : 1);
-			}, 1000)
-		});
-		new Vivus('eCommerceSVG', animationOptions, function(animation) {
-			setTimeout(function() {
-				animation.play(animation.getStatus() === 'end' ? -1 : 1);
-			}, 1000)
-		});
-		new Vivus('virtualEventsSVG', animationOptions, function(animation) {
-			setTimeout(function() {
-				animation.play(animation.getStatus() === 'end' ? -1 : 1);
-			}, 1000)
-		});
-		new Vivus('solutionsSVG', animationOptions, function(animation) {
-			setTimeout(function() {
-				animation.play(animation.getStatus() === 'end' ? -1 : 1);
-			}, 1000)
-		});
-
 
 		//Clientile Carousel
 		$('.owl-carousel').owlCarousel({
