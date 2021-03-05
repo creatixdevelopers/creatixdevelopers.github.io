@@ -5,7 +5,6 @@
 // // ******************************************
 
 $(document).ready(function() { 
-	shuffleLetters(document.getElementsByClassName("section_title")[0]);
 
 	var isPhone = screen.width > 700;
 	// Sparticles.js initialization
