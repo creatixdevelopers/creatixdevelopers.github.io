@@ -72,7 +72,7 @@ body {
 }
 .white_background {
 	background-color: white;
-	background-image: radial-gradient(grey 1px, transparent 0);
+	background-image: radial-gradient(#e4e3e1 1px, transparent 0);
 	background-size: 40px 40px; 
 	font-family: 'Montserrat', sans-serif;
 }
