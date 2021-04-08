@@ -507,7 +507,7 @@ background-color: #fceb58;
 		color: #fed136;
 		left: 40%;
 		top: 80%;
-		font-size: 8vw;
+		font-size: 7vw;
 		margin-right: 20px;
 		line-height: 1;
 	}
@@ -527,7 +527,7 @@ background-color: #fceb58;
 		margin: 0 5% !important;
 	}
 	.card_title {
-		font-size: 5vh;
+		font-size: 4vh;
 		font-weight: bold;
 	}
 	.card_text {
