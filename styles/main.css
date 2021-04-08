@@ -57,8 +57,9 @@ body {
 	overflow-x: hidden;
 }
 .section_title {
-	font-size: 10vh;
+	font-size: 8vh;
 	margin-left: 5vh;
+	padding-top: 10px;
 }
 .section_text {
 	font-size: 4vh; 
@@ -151,14 +152,14 @@ body {
 }
 #tagline {
 	position: absolute;
-	top: 60%;
-	left: 60%;
+	top: 67%;
+	left: 67%;
 	margin: 0px;
 	color: #fed137;
 	text-align: right;  
-	font-size: 6vw;
-	font-family: 'VT323', monospace;
-	line-height: 0.8
+	font-size: 4vw;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1;
 }
 .magnet {
 	display: inline-block;
@@ -187,9 +188,10 @@ body {
 	color: white;
 }
 .card_title {
-	font-size: 10vh;
+	font-size: 5vh;
+	font-weight: bold;
 	word-break: break-word;
-	font-family: 'VT323', monospace;
+	font-family: 'Montserrat', sans-serif;
 }
 .categoryButton {
 	outline: none !important;
@@ -348,7 +350,8 @@ body {
 }
 .category-content .section_title {
 	text-align: center;
-	font-family: 'VT323', monospace; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 7vh;
 	color: white;
 }
 .portfolio-item {
@@ -359,7 +362,7 @@ body {
 }
 .category-title {
 	text-align: center;
-	font-family: 'VT323', monospace; 
+	font-family: 'Montserrat', sans-serif;
 	color: white;
 }
 .offset {
@@ -423,7 +426,7 @@ body {
 }
 .description{
 	text-align: center;
-    font-family: 'VT323', monospace;
+    font-family: 'Montserrat', sans-serif;
 	color: white;
 	font-size: 4vh;
 	max-width: 80%;
@@ -502,13 +505,14 @@ background-color: #fceb58;
 	}
 	#tagline {  
 		color: #fed136;
-		left: 30%;
-		top: 70%;
-		font-size: 12vw;
-		margin-right: 20px; 
+		left: 40%;
+		top: 80%;
+		font-size: 8vw;
+		margin-right: 20px;
+		line-height: 1;
 	}
 	.section_title {
-		font-size: 7vh;
+		font-size: 6vh;
 		margin-right: 5vh;
 	}
 	.section_text {
@@ -523,7 +527,8 @@ background-color: #fceb58;
 		margin: 0 5% !important;
 	}
 	.card_title {
-		font-size: 7vh;
+		font-size: 5vh;
+		font-weight: bold;
 	}
 	.card_text {
 		font-size: 2vh;
@@ -544,6 +549,9 @@ background-color: #fceb58;
 	.reorder {
 		display: flex;
 		flex-direction: column-reverse;
+	}
+	.category-content .section_title { 
+		font-size: 5vh;
 	}
 	.closebt {
 		max-width: 13vw;
